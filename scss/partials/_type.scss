@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "Poppins";
+	src:  url("#{ $font-path }/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("#{ $font-path }/Rubik/Rubik-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url("#{ $font-path }/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("#{ $font-path }/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("#{ $font-path }/Open_Sans/OpenSans-Light.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font-size: $base-font-size * 3;
+	font-family: "Ubuntu";
+}
+
+h2 {
+	font-size: $base-font-size * 1.5;
+}
+
+h3 {
+	font-size: $base-font-size;
+	font-family: "Open Sans"
+}

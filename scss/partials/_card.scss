@@ -1,0 +1,50 @@
+.card {
+	display: flex;
+	background-color: $primary;
+	flex-direction: column;
+	border-radius: 1rem;
+	box-shadow: 0px 4px 4px #0000002b;
+
+	.card-header {
+		display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		align-items: center;
+		min-height: 2.75rem;
+		background-color: transparent;
+		padding: 0.5rem 1.5rem;
+		border-bottom: 2px solid $black;
+	}
+
+	.card-body {
+		flex: 1 1 auto;
+		padding: 1.5rem;
+	}
+}
+
+.card-block {
+	display: flex;
+
+	.card {
+		flex-grow: 1;
+		border-radius: 0;
+		border-left: 1px solid black;
+	}
+	.card:first-of-type {
+		border-top-left-radius: 1rem;
+		border-bottom-left-radius: 1rem;
+		border-left: 0;
+	}
+
+	.card:last-of-type {
+		border-top-right-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+	}
+}
+
+.is-primary {
+	.card {
+		background-color: $white;
+		color: $black;
+	}
+}

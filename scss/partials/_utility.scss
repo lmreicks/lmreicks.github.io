@@ -1,0 +1,43 @@
+
+.text-center {
+	text-align: center;
+}
+
+
+@for $i from 1 through 10 {
+	.mr-#{$i},
+	.my-#{$i} {
+		margin-right: $i * $spacer;
+	}
+
+	.ml-#{$i},
+	.my-#{$i} {
+		margin-left: $i * $spacer;
+	}
+
+	.mt-#{$i},
+	.mx-#{$i} {
+		margin-top: $i * $spacer;
+	}
+
+	.mb-#{$i},
+	.mx-#{$i} {
+		margin-bottom: $i * $spacer;
+	}
+
+	.flex-#{$i} {
+		flex: $i;
+	}
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-none {
+	display: none;
+}

@@ -1,0 +1,16 @@
+
+button, .btn {
+	border-radius: 0.5rem;
+	padding: 0.5rem 0.75rem;
+	font: inherit;
+	cursor: pointer;
+	color: inherit;
+	background-color: $primary;
+	text-decoration: none;
+	color: $white;
+	line-height: 1;
+
+	&:focus {
+		outline: 0;
+	}
+}
