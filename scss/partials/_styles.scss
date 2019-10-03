@@ -14,3 +14,31 @@ section {
 		color: $white;
 	}
 }
+
+.is-primary {
+	background-color: $primary;
+	color: $white;
+	border-color: $white;
+}
+
+.skill {
+	display: flex;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	background: #e8e8e8;
+	line-height: 2rem;
+	color: $white;
+	z-index: 1;
+	padding: 0;
+	margin-bottom: 10px;
+
+	.label {
+		padding: 0 1rem;
+		width: 100px;
+		background-color: #5a229e;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+}

@@ -1,0 +1,43 @@
+.drawer-container {
+	perspective: 800px;
+	position: relative;
+
+	.drawer {
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		transform-origin: 50% 0%;
+		backface-visibility: hidden;
+
+		&.open {
+			opacity: 1;
+			visibility: visible;
+			animation-name: swingdown;
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+		}
+	}
+}
+
+
+@keyframes swingdown {
+	0% {
+		opacity: .99999;
+		transform: rotateX(-90deg);
+	}
+
+	30% {			
+		transform: rotateX(20deg);
+		animation-timing-function: ease-in-out;
+	}
+
+	65% {
+		transform: rotateX(-20deg);
+		animation-timing-function: ease-in-out;
+	}
+
+	100% {
+		transform: rotateX(0);
+		animation-timing-function: ease-in-out;
+	}
+}
